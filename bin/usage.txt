@@ -1,0 +1,10 @@
+wipmap-generate
+
+Usage:
+  wipmap-generate <X> <Y>
+  wipmap-generate <X> <Y> -o map.json
+    
+Options:
+  -h, --help                    Show this screen.
+  -v, --version                 Print the current version.
+  -o, --output <file>           Write generated map in <file>.

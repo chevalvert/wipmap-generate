@@ -1,0 +1,25 @@
+{
+  "name": "wipmap-generator",
+  "version": "0.0.1",
+  "description": "wipmap map generator",
+  "author": "Arnaud Juracek",
+  "license": "MIT",
+  "private": false,
+  "main": "lib/wipmap-generate.js",
+  "bin": {
+    "wipmap-generate": "bin/index.js"
+  },
+  "dependencies": {
+    "fast-random": "^2.0.4",
+    "fs-extra": "^5.0.0",
+    "minimist": "^1.2.0",
+    "missing-math": "^2.0.1",
+    "point-in-polygon": "^1.0.1",
+    "poisson-disk-sampling": "^1.0.2",
+    "tumult": "^3.0.3",
+    "voronoi-diagram": "^1.0.1"
+  },
+  "devDependencies": {
+    "canvas": "^2.0.0-alpha.9"
+  }
+}
