@@ -1,13 +1,16 @@
 {
-  "width": 4,
-  "height": 3,
-  "jitter": 0.25,
-  "distortionOctaves": 64,
-  "distortion": 100,
-  "gradient": 20,
+  "width": 8,
+  "height": 6,
+  "decimals": 3,
+  "jitter": 0.4,
+
+  "distortion": 0.9,
+  "gradient": 0.4,
+
+  "poissonDensity": 0.3,
 
   "probablities": {
-    "water": 0.1
+    "water": 0.03
   },
 
   "biomes": {

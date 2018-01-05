@@ -2,6 +2,7 @@ wipmap-generate
 
 Usage:
   wipmap-generate <X> <Y>
+  wipmap-generate -x=<X> -y<Y>
   wipmap-generate <X> <Y> -o map.json
     
 Options:

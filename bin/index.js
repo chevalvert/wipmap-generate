@@ -13,13 +13,9 @@ console.time(prefix)
 
 const wipmap = generate(args.x, args.y)
 
-if (args.output) {
-  fs.outputJson(args.output, wipmap, { spaces: 2 }, (err) => {
-    if (err) throw err
-  })
-} else {
-  // console.log(wipmap)
-}
+fs.outputJson(args.output, wipmap, { spaces: env !== 'production' ? 2 : 0 }, (err) => {
+  if (err) throw err
+})
 
 if (env !== 'production') {
   const png = require(path.join(__dirname, '..', 'lib', 'utils', 'write-png'))

@@ -6,11 +6,13 @@ const minimist = require('minimist')
 
 const minimistOpts = {
   boolean: ['help', 'version'],
-  string: ['output'],
+  string: ['output', 'X', 'Y'],
   alias: {
     help: ['h'],
     version: ['v'],
-    output: ['o']
+    output: ['o'],
+    x: ['X'],
+    y: ['Y']
   }
 }
 
@@ -27,12 +29,12 @@ if (argv.version) {
   process.exit(0)
 }
 
-if (argv._.length < 2) {
+argv.x = parseFloat(argv.x || argv._[0])
+argv.y = parseFloat(argv.y || argv._[1])
+
+if (argv.x === undefined || argv.y === undefined || argv.output === undefined) {
   console.log(`See 'wipmap-generate -h' for usage`)
   process.exit(0)
 }
-
-argv.x = argv._[0]
-argv.y = argv._[1]
 
 module.exports = argv
