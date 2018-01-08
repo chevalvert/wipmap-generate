@@ -4,6 +4,7 @@ Usage:
   wipmap-generate <X> <Y>
   wipmap-generate -x=<X> -y<Y>
   wipmap-generate <X> <Y> -o map.json
+  wipmap-generate <X> <Y> -o map.json -o map.png
     
 Options:
   -h, --help                    Show this screen.

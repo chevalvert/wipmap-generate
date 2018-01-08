@@ -13,6 +13,9 @@ const minimistOpts = {
     output: ['o'],
     x: ['X'],
     y: ['Y']
+  },
+  default: {
+    output: path.join(process.cwd(), 'wipmap.json')
   }
 }
 
@@ -32,8 +35,8 @@ if (argv.version) {
 argv.x = parseFloat(argv.x || argv._[0])
 argv.y = parseFloat(argv.y || argv._[1])
 
-if (argv.x === undefined || argv.y === undefined || argv.output === undefined) {
-  console.log(`See 'wipmap-generate -h' for usage`)
+if (! ((argv.x || argv.x === 0) && (argv.y || argv.y === 0))) {
+  console.log(`Coordinates missing.\nSee 'wipmap-generate -h' for usage\n`)
   process.exit(0)
 }
 

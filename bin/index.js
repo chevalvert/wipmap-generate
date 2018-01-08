@@ -7,22 +7,31 @@ const args = require(path.join(__dirname, 'args'))
 const env = process.env.NODE_ENV || 'production'
 
 const generate = require('../')
+const png = require(path.join(__dirname, '..', 'lib', 'utils', 'write-png'))
 
-const prefix = `WIPMAP[${args.x};${args.y}]`
-console.time(prefix)
+process.title = `WIPMAP ${args.x};${args.y}`
+console.time(process.title)
 
+console.time('generation')
 const wipmap = generate(args.x, args.y)
+console.timeEnd('generation')
 
-fs.outputJson(args.output, wipmap, { spaces: env !== 'production' ? 2 : 0 }, (err) => {
-  if (err) throw err
+;[].concat(args.output || []).forEach(output => {
+  const filepath = path.resolve(output)
+  const filetype = path.extname(output)
+
+  console.time(filepath)
+  switch (filetype) {
+    case '.json':
+      fs.outputJson(filepath, wipmap, { spaces: env !== 'production' ? 2 : 0 }, err => {
+        if (err) throw err
+      })
+      break
+    case '.png':
+      png(wipmap, { filepath }).catch(err => { console.log(err) })
+      break
+  }
+  console.timeEnd(filepath)
 })
 
-if (env !== 'production') {
-  const png = require(path.join(__dirname, '..', 'lib', 'utils', 'write-png'))
-  const output = args.output ? args.output.replace('.json', '.png') : path.join(process.cwd(), 'output.png')
-  png(wipmap, { output })
-    .then(output => console.log(`✔︎  Success: ${output}`))
-    .catch(err => console.log(err))
-}
-
-console.timeEnd(prefix)
+console.timeEnd(process.title)
