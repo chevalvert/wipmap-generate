@@ -1,7 +1,7 @@
 {
-  "name": "wipmap-generator",
+  "name": "wipmap-generate",
   "version": "0.1.0",
-  "description": "wipmap map generator",
+  "description": "wipmap map generate",
   "author": "Arnaud Juracek",
   "license": "MIT",
   "private": false,
