@@ -13,9 +13,9 @@
     "water": 0.03
   },
 
-  "biomes": {
-    "forest": {
-
-    }
-  }
+  "biomesMap": [
+    ["TAIGA", "JUNGLE", "SWAMP"],
+    ["TUNDRA", "PLAINS", "PLAINS"],
+    ["TUNDRA", "PLAINS", "DESERT"]
+  ]
 }
