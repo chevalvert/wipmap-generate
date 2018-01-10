@@ -10,7 +10,8 @@
   "poissonDensity": 0.3,
 
   "probablities": {
-    "water": 0.03
+    "water": 0.03,
+    "forest": 0.2
   },
 
   "biomesMap": [
