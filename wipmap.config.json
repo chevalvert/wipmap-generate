@@ -22,7 +22,7 @@
 
   "landmarks": {
     "house": {
-      "length": 10,
+      "length": [3, 3, 3],
       "biomes": ["PLAINS"]
     },
     "rock": {
