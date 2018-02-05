@@ -10,8 +10,6 @@
 npm install -S chevalvert/wipmap-generate
 ```
 
-<br>
-
 ## Usage
 
 ###### CLI
@@ -35,10 +33,9 @@ Options:
 
 ```js
 import wipmap from 'wipmap-generate'
-const map = wipmap(0, 0)
+const [x, y] = [0, 0]
+const map = wipmap(x, y)
 ```
-
-<br>
 
 ## License
 [MIT.](https://tldrlegal.com/license/mit-license)
