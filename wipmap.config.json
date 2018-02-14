@@ -18,16 +18,5 @@
     ["TAIGA", "JUNGLE", "SWAMP"],
     ["TUNDRA", "PLAINS", "PLAINS"],
     ["TUNDRA", "PLAINS", "DESERT"]
-  ],
-
-  "landmarks": {
-    "house": {
-      "length": [3, 3, 3],
-      "biomes": ["PLAINS"]
-    },
-    "rock": {
-      "length": 10,
-      "biomes": ["JUNGLE", "FOREST"]
-    }
-  }
+  ]
 }
