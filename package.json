@@ -1,7 +1,7 @@
 {
   "name": "wipmap-generate",
   "version": "0.10.0",
-  "description": "wipmap map generate",
+  "description": "wipmap map generator",
   "author": "Arnaud Juracek",
   "license": "MIT",
   "private": false,
@@ -20,6 +20,12 @@
     "voronoi-diagram": "^1.0.1"
   },
   "devDependencies": {
-    "canvas": "^2.0.0-alpha.9"
+    "canvas": "^2.0.0-alpha.9",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
