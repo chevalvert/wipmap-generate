@@ -6,8 +6,8 @@ const path = require('path')
 const args = require(path.join(__dirname, 'args'))
 const env = process.env.NODE_ENV || 'production'
 
-const generate = require('../')
-const png = require(path.join(__dirname, '..', 'lib', 'utils', 'write-png'))
+const generate = require('./../')
+const png = require('./../lib/utils/write-png')
 
 process.title = `WIPMAP ${args.x};${args.y}`
 console.time(process.title)
