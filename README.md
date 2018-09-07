@@ -1,13 +1,10 @@
 # wipmap-generate [<img src="https://github.com/chevalvert.png?size=100" align="right">](http://chevalvert.fr/)
-
-*wipmap map generate*
-
-<br>
+> wipmap map generator
 
 ## Installation
 
 ```sh
-npm install -S chevalvert/wipmap-generate
+yarn add chevalvert/wipmap-generate
 ```
 
 ## Usage
@@ -34,7 +31,8 @@ Options:
 ```js
 import wipmap from 'wipmap-generate'
 const [x, y] = [0, 0]
-const map = wipmap(x, y)
+const opts = {}
+const map = wipmap(x, y, opts)
 ```
 
 ## License

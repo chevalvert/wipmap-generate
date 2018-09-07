@@ -1,11 +1,11 @@
 {
   "name": "wipmap-generate",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "description": "wipmap map generator",
   "author": "Arnaud Juracek",
   "license": "MIT",
   "private": false,
-  "main": "lib/wipmap-generate.js",
+  "main": "lib/generate.js",
   "bin": {
     "wipmap-generate": "bin/index.js"
   },
