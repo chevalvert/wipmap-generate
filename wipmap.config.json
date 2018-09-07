@@ -1,22 +1,22 @@
 {
-  "width": 8,
-  "height": 6,
+  "seed": "wipmap",
+  "width": 3,
+  "height": 2,
   "decimals": 3,
   "jitter": 0.4,
 
-  "distortion": 0.9,
-  "gradient": 0.8,
+  "distortion": 0.1,
+  "gradient": 0,
 
   "poissonDensity": 0.3,
 
   "probablities": {
-    "water": 0.03,
-    "forest": 0.2
+    "water": 0
   },
 
   "biomesMap": [
-    ["TAIGA", "JUNGLE", "SWAMP"],
-    ["TUNDRA", "PLAINS", "PLAINS"],
-    ["TUNDRA", "PLAINS", "DESERT"]
+    ["MOUNTAINS", "FOREST", "SWAMP"],
+    ["MOUNTAINS", "FOREST", "PLAINS"],
+    ["PLAINS", "PLAINS", "DESERT"]
   ]
 }
