@@ -1,5 +1,5 @@
 # wipmap-generate [<img src="https://github.com/chevalvert.png?size=100" align="right">](http://chevalvert.fr/)
-> wipmap map generator
+> isomorphic JS module and cli tool to generate `wipmap` maps
 
 ## Installation
 
